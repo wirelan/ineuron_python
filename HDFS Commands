@@ -1,0 +1,6 @@
+hadoop fs -ls/   
+--> Used to list down the directory in haddop
+
+hadoop fs -mkdir /input_data    ---> To create folder input_data in Hadoop
+hadoop fs -put test_demo/test.csv /input_data  --> copy test.csv file from test_demo folder to input_data folder
+
