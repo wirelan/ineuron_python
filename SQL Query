@@ -1,0 +1,53 @@
+\
+CREATE DATABASE test;
+
+CREATE DATABASE test_new;
+
+USE test;
+
+SHOW DATABASES;
+
+CREATE DATABASE abc;
+
+DROP DATABASE test_new;
+DROP DATABASE abc;
+USE test;
+
+CREATE TABLE IF NOT exists employee
+(
+    id INT,
+    name VARCHAR(50)
+);
+
+SHOW TABLES;
+
+SHOW CREATE TABLE employee;
+DROP TABLE employee;
+SHOW TABLES;
+CREATE TABLE IF NOT EXISTS employee
+(
+    id INT,
+    name VARCHAR(50),
+    salary DOUBLE,
+    hiring_date DATE
+);
+
+
+INSERT INTO employee VALUES (1, "Sourabh", 500, "2021-06-22");
+
+INSERT INTO employee VALUES (2, "Amit", 5000, "2021-06-20") , (3, "Nitin", 100, "2021-06-21");
+
+
+SELECT * FROM employee;
+
+DELETE FROM employee WHERE name = "Shashank";
+
+SELECT * FROM employee;
+
+
+INSERT INTO employee (id, name, salary) VALUES (4, "ABC", 3000);
+
+SELECT * FROM employee;
+
+SELECT id,name FROM employee
+
